@@ -64,7 +64,19 @@ public class Program
                     Console.WriteLine("2 - Raro");
                     Console.WriteLine("3 - Epico");
 
-                    int raridadeNum = int.Parse(Console.ReadLine());
+                    string funcao2 = Console.ReadLine();
+
+                    int raridadeNum;
+
+                    bool numeroValido2 = int.TryParse(funcao2, out raridadeNum);
+                    
+                    if (numeroValido2 == false)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("Digite apenas os números que estão no MENU!");
+                       Console.ResetColor();
+                       continue;
+                    }
 
                     if(raridadeNum > 0 && raridadeNum < 4) 
                     {
