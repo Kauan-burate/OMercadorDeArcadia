@@ -8,6 +8,7 @@ namespace OMercadorDeArcádia
 {
     public class ArmaMagica : ItemMagico
     {
+        /*MODIFICACAO NO CODIGO*/
         private double dano;
 
         public ArmaMagica() { }
